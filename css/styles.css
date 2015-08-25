@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+.hidden-mob {
+  display: none !important; }
+
+.visible-mob {
+  display: block !important; }
+
+@media (max-width: 799px) {
+  .hidden-mob {
+    display: block !important; } }
+body {
+  background-image: url(http://media.mediatemple.netdna-cdn.com/wp-content/themes/smashing-magazine/assets/images/smbg.png); }
+
+#title_header {
+  margin-top: 20px;
+  width: 100%;
+  height: 80px;
+  padding: 0px 10px; }
+  #title_header #logo {
+    width: 55%;
+    height: 50px;
+    left: 25px;
+    float: left;
+    position: absolute; }
+    #title_header #logo img {
+      width: 70%;
+      max-width: 250px; }
+  #title_header #header_menu {
+    position: relative;
+    margin-left: 10px; }
+  #title_header #buttons {
+    right: 18px;
+    margin-top: 2px;
+    position: absolute;
+    width: 135px; }
+    #title_header #buttons #search {
+      position: absolute;
+      width: 30px; }
+    #title_header #buttons #menu_button {
+      position: absolute;
+      right: 10px;
+      line-height: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      color: white; }
+
+#hidden_menu {
+  position: relative;
+  display: none; }
+  #hidden_menu .menu {
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 0px 2px 20px; }
+    #hidden_menu .menu li {
+      margin-left: 5px;
+      transition: all .5s linear; }
+    #hidden_menu .menu li:first-child {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      color: #333;
+      font-size: 18px;
+      margin-bottom: 12px; }
+    #hidden_menu .menu li:not(:first-child) {
+      color: #35c4d8;
+      cursor: pointer;
+      font-family: "Lato", sans-serif;
+      margin: 0px 10px;
+      padding: 10px 5px;
+      display: block;
+      border-bottom: 1px solid rgba(124, 125, 125, 0.2); }
+      #hidden_menu .menu li:not(:first-child):hover {
+        background-color: rgba(200, 255, 0, 0.6);
+        color: black;
+        border-bottom: 1px solid #35c4d8; }
+
+#search_div {
+  position: static;
+  display: none;
+  height: 80px;
+  margin-left: 30px; }
+  #search_div .inactive {
+    color: #bfbcbc;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px; }
+  #search_div #mobile-search-input {
+    width: 61%;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    height: 2.1em;
+    color: #a1a1a1;
+    padding: 2px 5px;
+    font-family: "Raleway", sans-serif;
+    position: absolute;
+    border: 0.08em solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 0.8em 0 0 0.8em; }
+    #search_div #mobile-search-input:focus {
+      border: 1px solid #777; }
+  #search_div #search_button {
+    width: 35%;
+    right: 2px;
+    height: 25px;
+    background: linear-gradient(#e95c33, rgba(248, 33, 3, 0.8));
+    margin-top: 10px;
+    position: absolute;
+    border-radius: 0 .5em .5em 0;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px; }
+
+.btn {
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+
+.btn-red {
+  background: #e95c33;
+  border: .08em solid #c73a11;
+  box-shadow: 0 0.08em 0.08em rgba(0, 0, 0, 0.25);
+  width: 42px;
+  padding: 5px 8px;
+  cursor: pointer;
+  height: 27px; }
+  .btn-red:hover {
+    border: .12em solid #c73a11;
+    box-shadow: 0 0.08em 0.08em rgba(0, 0, 0, 0.5); }
+
+#content {
+  background-color: #fff;
+  position: static;
+  box-shadow: 0 0 0.625em 0.08em rgba(0, 0, 0, 0.05); }
+  #content .each_article {
+    padding: .5em 5.5% 4em;
+    border-bottom: .3125em solid #41b7d8; }
+    #content .each_article #main_heading {
+      font-family: main_heading_font;
+      color: #333;
+      font-size: 100%;
+      text-decoration: none; }
+
+/*# sourceMappingURL=styles.css.map */
