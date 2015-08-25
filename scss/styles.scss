@@ -1,8 +1,14 @@
-$main_heading_font : 'Droid Serif', serif;
+$main_heading_font : 'Merriweather', serif;
 $ul_heading : 'Montserrat', sans-serif;
 $li_childs : 'Lato', sans-serif;
 $inactive_font : 'Raleway', sans-serif;
 $li_childs_color : #35c4d8;
+
+$content_header_font : 'Lora', serif;
+$sub_title_font: 'Roboto Slab', serif;
+$content_font : 'Droid Serif', serif;
+$sub_content_font : 'Open Sans', sans-serif;
+
 
 $grey1: #333;
 $grey2: #777;
@@ -173,6 +179,26 @@ body {
   }
 }
 
+.btn-blue {
+  background-color: rgb(65, 183, 216);
+  box-shadow: 0 .08em .08em rgba(0,0,0,.25);
+  width: 120px;
+  color: white;
+  font-size: 19px;
+  font-family: $sub_content_font;
+  line-height: 1.5;
+  margin-top: 30px;
+  padding: 5px 8px;
+  border-color: $grey3;
+  cursor: pointer;
+  height: 27px;
+
+  &:hover {
+    border: .12em solid $grey2;
+    box-shadow: 0 .08em .08em rgba(0,0,0,.5);
+  }
+}
+
 #content {
   background-color: #fff;
   position: static;
@@ -182,11 +208,73 @@ body {
     padding: .5em 5.5% 4em;
     border-bottom: .3125em solid #41b7d8;
 
-    #main_heading {
-      font-family: main_heading_font;
-      color: #333;
-      font-size: 100%;
+    .main_heading {
+      font-family: $main_heading_font;
       text-decoration: none;
+      padding-bottom: 0px;
+      border-bottom: 1px solid $grey4;
+
+      .heading_h2 {
+        color: #333;
+        font-size: 28px;
+        padding-bottom: 5px;
+        font-weight: bolder;
+      }
+      .heading_h4 {
+        font-family: $content_header_font;
+        letter-spacing: 0.9px;
+        color: $grey3;
+        font-weight: 500;
+        margin: 10px 0px;
+        font-size: 19px;
+        a {
+          text-decoration: none;
+          color: #41b7d8;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .sub_title {
+      list-style-type: none;
+      padding: 0px;
+
+      .sub_title_contents {
+        font-size: 16px;
+        font-weight: 600;
+        color: $grey3;
+        letter-spacing: 1px;
+        font-family: $sub_content_font;
+        padding: 7px 0px;
+
+        a {
+          text-decoration: none;
+          color: #41b7d8;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .contents {
+      font-family: $content_font;
+      font-size: 18px;
+      color: $grey1;
+      line-height: 25px;
+
+      .sub_contents {
+        font-family: $sub_content_font;
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 20px;
+      }
     }
   }
+}
+.images_inside {
+  width: 95%;
+  max-width: 500px;
 }
