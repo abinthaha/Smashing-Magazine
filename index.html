@@ -9,27 +9,11 @@
   <title>Smashing Magazine - For Proffessional Web Designers and Developers</title>
 </head>
 <body>
-  <header id="title_header">
+  <header id="title_header" class="hidden-mob">
     <div id="logo">
       <img src="img/logo.png" alt="" id="main_logo">
+
     </div>
-    <!-- <div class="" id="header_menu">
-        <div class="btn btn-top">
-          Books
-        </div>
-        <div class="btn btn-top">
-          eBooks
-        </div>
-        <div class="btn btn-top">
-          Tickets
-        </div>
-        <div class="btn btn-top">
-          Shop
-        </div>
-        <div class="btn btn-top">
-          Jobs
-        </div>
-    </div> -->
     <div class="hidden-mob" id="buttons">
       <div id="search" class="btn btn-red" onclick="show_search()">
         <img src="img/search_icon.svg" alt="" width="28px" height="28px" />
@@ -69,6 +53,78 @@
       </div>
     </div>
   </div>
+  <div class="visible-mob topbar">
+    <ul class="nav-tabs">
+      <li role="" class="active"><a href=""><img src="img/logo.png"></a></li>
+      <li role=""><a href="#">Books</a></li>
+      <li role="" id="second-child"><a href="#">eBooks</a></li>
+      <li role=""><a href="#">Tickets</a></li>
+      <li role=""><a href="#">Shop</a></li>
+      <li role=""><a href="#">Jobs</a></li>
+      <li>
+        <a href="#"><img src="img/rss.png" alt=""/></a>
+        <a href="#"><img src="img/fb.png" alt=""/></a>
+        <a href="#"><img src="img/twitter.png" alt=""/></a>
+        <a href="#"><img src="img/newsletter.png" alt=""/></a>
+      </li>
+    </ul>
+</div>
+<div id="search-on">
+  <label for="mobile-search-input" class="inactive">Search on Smashing Magazine</label><br/>
+  <input type="text"id="mobile-search-input" placeholder="e.g. CSS">
+  <div class="btn btn-red" id="search_button">
+    Search
+  </div>
+</div>
+<div id="search-799-above">
+  <ul id="coding">
+    <li>CODING</li>
+    <li>CSS</li>
+    <li>HTML</li>
+    <li>JavaScript</li>
+    <li>Techniques</li>
+    <li> </li>
+  </ul>
+  <ul id="design">
+    <li>DESIGN</li>
+    <li>Web Design</li>
+    <li>Typography</li>
+    <li>Inspiration</li>
+    <li>Business</li>
+    <li> </li>
+  </ul>
+  <ul id="mobile">
+    <li>MOBILE</li>
+    <li>iPhone & iPad</li>
+    <li>Android</li>
+    <li>Design Patterns</li>
+    <li> </li>
+  </ul>
+  <ul id="graphics">
+    <li>GRAPHICS</li>
+    <li>Photoshop</li>
+    <li>Fireworks</li>
+    <li>Wallpapers</li>
+    <li>Freebies</li>
+    <li> </li>
+  </ul>
+  <ul id="ux-design">
+    <li>UX DESIGN</li>
+    <li>Usability</li>
+    <li>User Experience</li>
+    <li>UI Design</li>
+    <li>E-Commerce</li>
+    <li> </li>
+  </ul>
+  <ul id="wordpress">
+    <li>WORDPRESS</li>
+    <li>Essentials</li>
+    <li>Techniques</li>
+    <li>Plugins</li>
+    <li>Themes</li>
+    <li> </li>
+  </ul>
+</div>
   <div class="" id="content">
     <article class="each_article">
       <header class="main_heading">
@@ -81,15 +137,16 @@
       </header>
       <ul class="sub_title">
         <li class="sub_title_contents">
-          August 25th, 2015
+          <img src="img/index.gif" alt="" /> &nbsp; August 25th, 2015
         </li>
         <li class="sub_title_contents">
+          <img src="img/index2.gif" alt="" /> &nbsp;
           <a href="#">E-commerce,</a>
           <a href="#"> Responsive Web Design,</a>
           <a href="#"> User Experience</a>
         </li>
         <li class="sub_title_contents">
-          <a href="#">1 Comment</a>
+          <img src="img/index3.gif" alt="" /> &nbsp;<a href="#">1 Comment</a>
         </li>
       </ul>
       <div class="contents">
@@ -114,21 +171,25 @@
       </header>
       <ul class="sub_title">
         <li class="sub_title_contents">
-          August 24th, 2015
+          <img src="img/index.gif" alt="" /> &nbsp;August 24th, 2015
         </li>
         <li class="sub_title_contents">
+          <img src="img/index2.gif" alt="" /> &nbsp;
           <a href="#">Emails,</a>
           <a href="#"> Newsletters,</a>
           <a href="#"> Patterns</a>
         </li>
         <li class="sub_title_contents">
-          <a href="#">10 Comments</a>
+          <img src="img/index3.gif" alt="" /> &nbsp;<a href="#">10 Comments</a>
         </li>
       </ul>
       <div class="contents">
           <span>The responsive design revolution is truly upon us (if it hasn’t already happened!), and even though e-commerce websites haven’t picked up <b>responsive design</b> quite as aggressively as in other industries, it’s becoming increasingly popular.</span>
           <img src="img/img2.jpg" alt="" class="images_inside"/>
-          <span class="sub_contents"> <br/> So far, most of the responsive design thinking has revolved around covering the range of experiences from mobile to desktop. Yet little attention has been paid to the opportunities for expanding that range beyond the standard desktop screen, to create an experience optimized for modern <b>large-scale displays<b/></span>
+          <span class="sub_contents">
+            <br/> So far, most of the responsive design thinking has revolved around covering the range of experiences from mobile to desktop. Yet little attention has been paid to the opportunities for expanding that range beyond the standard desktop screen, to create an experience optimized for modern
+              <b>large-scale displays<b/>
+          </span>
       </div>
       <footer>
         <div class="btn btn-blue">
@@ -137,5 +198,78 @@
       </footer>
     </article>
   </div>
+  <aside class="visible-mob-1020" id="adverts">
+    <div class="connects">
+      <span class="inactive">Search on Smashing Magazine</span>
+      <ul>
+        <li>
+          <a href="#"><img src="img/rss.png" alt=""/></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/fb.png" alt=""/></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/twitter.png" alt=""/></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/newsletter.png" alt=""/></a>
+        </li>
+      </ul>
+    </div>
+    <div class="search_in_advertisement">
+      <input type="text"id="mobile-search-input" placeholder="e.g. CSS">
+      <div class="btn btn-red" id="search_button">
+        Search
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <span class="inactive">Advertisements</span>
+          <span id="span_link"><a href="#">Advertise with Us!</a></span>
+        </li>
+        <li>
+          <img src="img/adv1.png" class = "img_left" alt="" />
+          <img src="img/adv2.png" alt="" class="img_right" />
+        </li>
+        <li>
+          <span class="title_span_left">Meet DreemPress 2!</span>
+          <span class="title_span_right">Study completely online</span>
+        </li>
+        <li>
+          <img src="img/adv3.png" class = "img_left" alt="" />
+          <img src="img/adv4.png" alt="" class="img_right" />
+        </li>
+        <li>
+          <span class="title_span_left">Sign Up for free!</span>
+          <span class="title_span_right">Try Framer for free</span>
+        </li>
+        <li>
+          <img src="img/adv7.png" alt="" width="99%" height="130px"/>
+        </li>
+        <li>
+          <div id="full_screen_image_title">
+            Easy front-end Development
+          </div>
+        </li>
+        <li>
+          <img src="img/adv5.png" class = "img_left" alt="" />
+          <img src="img/adv6.png" alt="" class="img_right" />
+        </li>
+        <li>
+          <span class="title_span_left">Online project management</span>
+          <span class="title_span_right">Easy responsive images</span>
+        </li>
+        <li>
+          <img src="img/adv8.png" class = "img_left" alt="" />
+          <img src="img/adv9.jpg" alt="" class="img_right" />
+        </li>
+        <li>
+          <span class="title_span_left">Form theme store</span>
+          <span class="title_span_right">Built for open source developers</span>
+        </li>
+      </ul>
+    </nav>
+  </aside>
 </body>
 </html>
