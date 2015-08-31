@@ -1,29 +1,61 @@
 function show_hidden_menu() {
-  if(document.getElementById('hidden_menu').style.display == "none")
-  {
-    if(document.getElementById('search_div').style.display == "block")
+  var menu_btn = document.getElementById('hidden_menu');
+  var search_btn = document.getElementById('search_div');
+
+  if((menu_btn.className == "hide_menu")||(menu_btn.className == "")) {
+    if(search_btn.className == "search_div_show")
     {
-      document.getElementById('search_div').style.display = "none";
+      search_btn.className = "search_div_hide"
     }
-    document.getElementById('hidden_menu').style.display = "block";
-    document.getElementById('menu_button').innerHTML = "X";
+    menu_btn.className = "show_menu";
   }
   else {
-    document.getElementById('hidden_menu').style.display = "none";
-    document.getElementById('menu_button').innerHTML = "MENU";
+    menu_btn.className = "hide_menu";
   }
 }
 
+// function show_hidden_menu() {
+//   if(document.getElementById('hidden_menu').style.display == "none")
+//   {
+//     if(document.getElementById('search_div').style.display == "block")
+//     {
+//       document.getElementById('search_div').style.display = "none";
+//     }
+//     document.getElementById('hidden_menu').style.display = "block";
+//     document.getElementById('menu_button').innerHTML = "X";
+//   }
+//   else {
+//     document.getElementById('hidden_menu').style.display = "none";
+//     document.getElementById('menu_button').innerHTML = "MENU";
+//   }
+// }
+
 function show_search() {
-  if(document.getElementById('search_div').style.display == "none")
-  {
-    if(document.getElementById('hidden_menu').style.display == "block")
+  var menu_btn = document.getElementById('hidden_menu');
+  var search_btn = document.getElementById('search_div');
+
+  if((search_btn.className == "search_div_hide")||(menu_btn.className == "")) {
+    if(menu_btn.className == "show_menu")
     {
-      document.getElementById('hidden_menu').style.display = "none";
+      menu_btn.className = "hide_menu"
     }
-    document.getElementById('search_div').style.display = "block";
+    search_btn.className = "search_div_show";
   }
   else {
-    document.getElementById('search_div').style.display = "none";
+    search_btn.className = "search_div_hide";
   }
 }
+
+// function show_search() {
+//   if(document.getElementById('search_div').style.display == "none")
+//   {
+//     if(document.getElementById('hidden_menu').style.display == "block")
+//     {
+//       document.getElementById('hidden_menu').style.display = "none";
+//     }
+//     document.getElementById('search_div').style.display = "block";
+//   }
+//   else {
+//     document.getElementById('search_div').style.display = "none";
+//   }
+// }

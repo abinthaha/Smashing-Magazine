@@ -23,7 +23,7 @@
       </div>
     </div>
   </header>
-  <nav class="" id="hidden_menu" >
+  <nav class="hide_menu" id="hidden_menu">
     <ul class="menu" id="smashing_page">
       <li>Smashing Pages:</li>
       <li>Books</li>
@@ -44,7 +44,7 @@
       <li>WordPress</li>
     </ul>
   </nav>
-  <div class="" id="search_div">
+  <div class="search_div_hide" id="search_div">
     <div class="" id="">
       <label for="mobile-search-input" class="inactive">Search on Smashing Magazine</label><br/>
       <input type="text" name="name" value="" id="mobile-search-input" placeholder="e.g. CSS">
@@ -126,6 +126,16 @@
   </ul>
 </div>
   <div class="" id="content">
+    <div class="secret">
+      <ul>
+        <li id="coding1">CODING</li>
+        <li id="design1">DESIGN</li>
+        <li id="mobile1">MOBILE</li>
+        <li id="graphics1">GRAPHICS</li>
+        <li id="ux-design1">UX DESIGN</li>
+        <li id="wordpress1">WORDPRESS</li>
+      </ul>
+    </div>
     <article class="each_article">
       <header class="main_heading">
         <h2 class="heading_h2">
@@ -184,11 +194,10 @@
         </li>
       </ul>
       <div class="contents">
-          <span>The responsive design revolution is truly upon us (if it hasn’t already happened!), and even though e-commerce websites haven’t picked up <b>responsive design</b> quite as aggressively as in other industries, it’s becoming increasingly popular.</span>
+          <span>Last year I read Jan Constantin’s post “Typographic Design Patterns and Current Practices” and straightaway wanted to do something similar with email. At the time I was studying responsive typography on the web, trying to break down the websites I liked in order to understand what made the typography work so well, then attempting to apply those findings to email design.</span>
           <img src="img/img2.jpg" alt="" class="images_inside"/>
           <span class="sub_contents">
-            <br/> So far, most of the responsive design thinking has revolved around covering the range of experiences from mobile to desktop. Yet little attention has been paid to the opportunities for expanding that range beyond the standard desktop screen, to create an experience optimized for modern
-              <b>large-scale displays<b/>
+            <br/> After seeing Constantin’s work, I also wanted to explore how other <b>email designers were handling responsive typography.</b> So, I amassed 50 emails across various industries that I think do a good job with typography to see if any patterns emerged. You can skip straight to the Google Doc showing the raw data and results.
           </span>
       </div>
       <footer>
@@ -197,6 +206,38 @@
         </div>
       </footer>
     </article>
+    <div class="page-manipulation-buttons">
+      <div class="buttons">
+        <span class="btn btn-blue">
+          1
+        </span>
+        <span class="btn btn-inactive">
+          2
+        </span>
+        <span class="btn btn-inactive">
+          3
+        </span>
+        <span class="btn btn-inactive">
+          4
+        </span>
+        <span class="btn btn-inactive">
+          5
+        </span>
+        <span class="btn btn-inactive">
+          6
+        </span>
+        <span class="btn btn-next" id="next_button">
+          next
+          <img src="img/right_arrow.png" alt=""  width="10px"/>
+        </span>
+      </div>
+      <div id="back_to_top">
+        <a href="#">
+          <img src="img/top.png" width="8px" />
+          Back to top
+        </a>
+      </div>
+    </div>
   </div>
   <aside class="visible-mob-1020" id="adverts">
     <div class="connects">
@@ -271,5 +312,44 @@
       </ul>
     </nav>
   </aside>
+  <footer class="page_footer">
+    <div class="footer_div">
+      <a href="#"><img src="img/footer-sb5.png" /></a>
+      <p class="">
+        <a href="#" class="footer_head">Smashing Book 5</a>
+        With smart front-end techniques from real-life responsive projects.
+        <a href="#" class="footer_learn">Learn more...</a>
+      </p>
+    </div>
+    <div class="footer_div">
+      <a href="#"><img src="img/footer-sb6.png" /></a>
+      <p class="">
+        <a href="#" class="footer_head">The Smashing Library</a>
+        Grab all published and upcoming Smashing eBooks, in one swoop.
+        <a href="#" class="footer_learn">Learn more...</a>
+      </p>
+    </div>
+    <div class="footer_div">
+      <a href="#"><img src="img/footer-sb7.jpg" /></a>
+      <p class="">
+        <a href="#" class="footer_head">Smashing Workshop</a>
+        &nbsp; Join our hands-on full-day workshops,run by experts of the industry. Good stuff.
+        <a href="#" class="footer_learn">Learn more...</a>
+      </p>
+    </div>
+
+    <div class="footer_bottom">
+      <p>
+        <i>With a commitment to quality content for the design community.</i>
+        Founded by Vitaly Friedman and Sven Lennartz. 2006-2015.
+        Made in Germany. ✎
+        <a href="#">Write for us</a>
+         –
+        <a href="#">Contact us</a>
+         –
+        <a href="#">Impressum.</a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
